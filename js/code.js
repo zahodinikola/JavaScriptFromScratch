@@ -76,16 +76,28 @@
 // function add (x, y)
 // {
 //     var z = x + y;
-//     return z;
+//     return;
 // }
 
 // var sum = add (5, 6);
 // alert (sum);
-var add = function (x, y)
-{
-    var z = x + y;
-    return z;
-}
+// var add = function (x, y)
+// {
+//     var z = x + y;
+//     return z;
+// }
 
-sum = add (5,6,7);
-alert (sum);
+// sum = add (5,6);
+// sum2 = add (6,6);
+// //alert (sum);
+// output.innerHTML = sum + ", " + sum2;
+ var constant = 32;
+
+ function celsiusToFarenheit( temperature)
+ {
+    var farenheitTemp = temperature * 9 / 5 + constant;
+    return farenheitTemp;
+ }
+
+ output.innerHTML = celsiusToFarenheit(100);
+ 
