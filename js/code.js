@@ -103,12 +103,44 @@
 //  }
 
 // output.innerHTML = celsiusToFarenheit(100);
-var x = 15;
-if (x < 20)
+// var x = 15;
+// if (x < 20)
+// {
+//     var y = x;
+// }
+
+// var z = y;
+
+// output.innerHTML = z;
+
+// nested functions
+
+// function hypotenuse()
+// {
+//     var side1 = 3;
+//     var side2 = 4;
+
+//     function squareside1()
+//     {
+//         return side1 * side1;
+//     }
+//     function squareside2()
+//     {
+//         return side2 * side2;
+//     }
+
+//     return Math.sqrt(squareside1() + squareside2());
+// }
+function hypotenuse(a,b)
 {
-    var y = x;
+    
+    function square(x)
+    {
+        return x * x;
+    }
+    
+    return Math.sqrt(square(a) + square(b));
 }
+output.innerHTML = hypotenuse(3,4);
 
-var z = y;
 
-output.innerHTML = z;
