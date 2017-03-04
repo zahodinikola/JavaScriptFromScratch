@@ -91,13 +91,24 @@
 // sum2 = add (6,6);
 // //alert (sum);
 // output.innerHTML = sum + ", " + sum2;
- var constant = 32;
+//  var constant = 32;
 
- function celsiusToFarenheit( temperature)
- {
-    var farenheitTemp = temperature * 9 / 5 + constant;
-    return farenheitTemp;
- }
+//  function celsiusToFarenheit( temperature)
+//  {
+//     var multiplier = 9;
+//     var divisor = 5;
+    
+//     var farenheitTemp = temperature * multiplier / divisor + constant;
+//     return farenheitTemp;
+//  }
 
- output.innerHTML = celsiusToFarenheit(100);
- 
+// output.innerHTML = celsiusToFarenheit(100);
+var x = 15;
+if (x < 20)
+{
+    var y = x;
+}
+
+var z = y;
+
+output.innerHTML = z;
