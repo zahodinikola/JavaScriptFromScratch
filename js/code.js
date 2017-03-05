@@ -131,16 +131,45 @@
 
 //     return Math.sqrt(squareside1() + squareside2());
 // }
-function hypotenuse(a,b)
-{
-    
-    function square(x)
-    {
-        return x * x;
-    }
-    
-    return Math.sqrt(square(a) + square(b));
+// 
+// var scope = "global";
+
+// function testScope (){
+//     var scope = "local";
+//     function innerFunc(){return scope;}
+//     return innerFunc();
+// }
+
+// var answer = testScope ();
+// output.innerHTML = answer;
+// var scope = "global";
+
+// function testScope (){
+//     var scope = "local";
+//     function innerFunc(){return scope;}
+//     return innerFunc;
+// }
+
+// var innerFunc = testScope(); 
+// var answer = innerFunc ();
+// output.innerHTML = answer;
+
+// var scope = "global";
+
+// function testScope (){
+//     var scope = "local";
+//     function innerFunc(){return scope;}
+//     return innerFunc;
+// }
+
+// var answer = testScope()(); 
+// output.innerHTML = answer;
+
+var x = 50;
+function someFunction(){
+    var y = 100;
+    return x + y;
 }
-output.innerHTML = hypotenuse(3,4);
 
-
+var answer = someFunction ();
+output.innerHTML = answer;
