@@ -165,11 +165,59 @@
 // var answer = testScope()(); 
 // output.innerHTML = answer;
 
-var x = 50;
-function someFunction(){
-    var y = 100;
-    return x + y;
+// var x = 50;
+// function someFunction(){
+//     var y = 100;
+//     return x + y;
+// }
+
+// var answer = someFunction ();
+// output.innerHTML = answer;
+
+// function func1(num, exp){
+//     if (exp === 0)
+//     {
+//         return 1;
+//     }
+//     return num * func2(num, exp - 1);
+// }
+
+// function func2(num, exp){
+//     if (exp === 0) return 1;
+//     return num * func3(num, exp - 1);
+// }
+
+// function func3(num, exp){
+//     if (exp === 0) return 1;
+//     return num * func4(num, exp - 1);
+// }
+
+// function func4(num, exp){
+//     if (exp === 0) return 1;
+//     alert ("exponent too big!");
+// }
+
+// var answer = func1(4, 3);
+// output.innerHTML = answer;
+
+// function func1(num, exp){
+//     if (exp === 0)
+//     {
+//         return 1;
+//     }
+//     return num * func1(num, exp - 1);
+// }
+
+// var answer = func1(4, 3);
+// output.innerHTML = answer;
+function nonRecursiveFunc (num, exp){
+    var retVal = 1;
+    for (var i = 0; i < exp; i++)
+    {
+        retVal *= num;
+    }
+    return retVal;
 }
 
-var answer = someFunction ();
+var answer = nonRecursiveFunc (2, 10);
 output.innerHTML = answer;
