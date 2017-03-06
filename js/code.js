@@ -210,14 +210,23 @@
 
 // var answer = func1(4, 3);
 // output.innerHTML = answer;
-function nonRecursiveFunc (num, exp){
-    var retVal = 1;
-    for (var i = 0; i < exp; i++)
-    {
-        retVal *= num;
-    }
-    return retVal;
-}
+var dog = {
+    name: "Charlie",
+    breed: "Mix",
+    weight: 12,
+    color: "Brown"
+};
 
-var answer = nonRecursiveFunc (2, 10);
-output.innerHTML = answer;
+var dogWeight = dog.weight;
+//alert (dogWeight);
+
+dog.disposition = "wonderful";
+disp = dog.disposition;
+// alert (disp);
+
+var height = dog.height;
+// alert (height);
+
+dog.weight = 15;
+var dogweight2 = dog.weight;
+alert (dogweight2);
