@@ -269,18 +269,37 @@
 // }
 // alert (range(5));
 
-function range(max){
-    var retVal = [];
-    for ( var i = 0; i < max; i++)
-    {
-        retVal.push(i * 2);
-    }
-        return retVal;
-}
+// function range(max){
+//     var retVal = [];
+//     for ( var i = 0; i < max; i++)
+//     {
+//         retVal.push(i * 2);
+//     }
+//         return retVal;
+// }
 
-var myArray = range(5);
+// var myArray = range(5);
 
-for (var i = 0; i < myArray.length; i++)
-{
-    alert (myArray[i]);
-}
+// for (var i = 0; i < myArray.length; i++)
+// {
+//     alert (myArray[i]);
+// }
+
+// var string1 = "Thr quick brown fox jumps over the lazy dog";
+// var string2 = 'The quick brown fox jumps over the "lazy" dog'
+// alert (string2);
+
+var string1 = "The quick brown fox jumps over the \"lazy\" dog";
+var string2 = ' and lived happily ever after.';
+var newString = string1 + string2;
+// alert (newString);
+
+var myArray = newString.split (" ");
+// alert (myArray);
+
+var indexOfBrown = newString.indexOf("brown");
+// alert(indexOfBrown);
+var indexOfJumps = newString.indexOf("jumps");
+var myFox = newString.slice(indexOfBrown, indexOfJumps);
+alert(myFox);
+
