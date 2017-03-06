@@ -210,23 +210,77 @@
 
 // var answer = func1(4, 3);
 // output.innerHTML = answer;
-var dog = {
-    name: "Charlie",
-    breed: "Mix",
-    weight: 12,
-    color: "Brown"
-};
+// var dog = {
+//     name: "Charlie",
+//     breed: "Mix",
+//     weight: 12,
+//     color: "Brown"
+// };
 
-var dogWeight = dog.weight;
-//alert (dogWeight);
+// var dogWeight = dog.weight;
+// //alert (dogWeight);
 
-dog.disposition = "wonderful";
-disp = dog.disposition;
-// alert (disp);
+// dog.disposition = "wonderful";
+// disp = dog.disposition;
+// // alert (disp);
 
-var height = dog.height;
-// alert (height);
+// var height = dog.height;
+// // alert (height);
 
-dog.weight = 15;
-var dogweight2 = dog.weight;
-alert (dogweight2);
+// dog.weight = 15;
+// var dogweight2 = dog.weight;
+// alert (dogweight2);
+
+// var empty = [];
+// empty[0] = 1;
+// empty[1] = 2;
+
+// // alert (empty);
+
+// var primes = [1, 2, 3, 5, 7, 11];
+// var thirdPrime = primes[2];
+// // alert (thirdPrime);
+
+// var myArray = [1, "hello", false];
+// var truth = myArray [2];
+// // alert (truth);
+
+// var myArrayLength = myArray.length;
+// // alert(myArrayLength);
+
+// function range(max){
+//     var retVal = [];
+//     for ( var i = 0; i < max; i++)
+//     {
+//         retVal[i] = i * 2;
+//     }
+//     return retVal;
+// }
+// alert (range(5));
+// function range(max){
+//     var retVal = [];
+//     for ( var i = 0; i < max; i++)
+//     {
+//         retVal.push(i * 2);
+//     }
+//     var last = retVal.pop();
+//     alert (last);
+//     return retVal;
+// }
+// alert (range(5));
+
+function range(max){
+    var retVal = [];
+    for ( var i = 0; i < max; i++)
+    {
+        retVal.push(i * 2);
+    }
+        return retVal;
+}
+
+var myArray = range(5);
+
+for (var i = 0; i < myArray.length; i++)
+{
+    alert (myArray[i]);
+}
